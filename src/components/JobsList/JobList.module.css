@@ -1,0 +1,31 @@
+.jobItem {
+  @apply bg-white rounded-lg mb-2 last:mb-0 drop-shadow p-4 pb-6 s:py-7 m:flex;
+}
+
+.wrapper {
+  @apply w-full flex m:flex-col justify-between items-end m:ml-auto m:w-[250px] shrink-0 flex-row  pl-[85px] m:order-1 m:pl-0 mb-4 m:mb-0;
+}
+
+.publicationDate {
+  @apply text-base text-secondary-font font-light text-[14px] leading-[17px] whitespace-nowrap;
+}
+
+.avatar {
+  @apply rounded-full w-[66px] h-[66px] shrink-0 mr-5;
+}
+
+.jobInfo {
+  @apply text-base text-secondary-font tracking-[0.23619px];
+}
+
+.title {
+  @apply text-main-font text-lg leading-6 tracking-[-0.5625px] mb-[7px] inline-block;
+}
+
+.rating {
+  @apply flex content-center justify-center self-center m:self-start shrink-0;
+}
+
+.rating img {
+  @apply inline-block w-[10px] h-[10px] m:w-[18px] m:h-[18px];
+}

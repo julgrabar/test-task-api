@@ -1,0 +1,15 @@
+.wrapper {
+  @apply grid grid-cols-[auto_170px] gap-x-4 m:gap-x-[60px] gap-y-2 mb-2;
+}
+
+.title {
+  @apply text-2xl text-main-font font-bold col-start-1 col-end-3 m:col-end-2;
+}
+
+.publicationDate {
+  @apply row-start-2 col-start-1 text-base text-secondary-font font-light text-[14px] leading-[17px] whitespace-nowrap self-center;
+}
+
+.salary {
+  @apply font-bold text-xl leading-[25px] tracking-[-0.625] text-main-font mt-1 m:order-[-1];
+}

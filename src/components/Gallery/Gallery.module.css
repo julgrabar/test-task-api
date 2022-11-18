@@ -1,0 +1,7 @@
+.galleryList {
+  @apply flex gap-2 overflow-x-auto mb-16 m:mb-0;
+}
+
+.galleryList li {
+  @apply shrink-0 h-[115px] rounded-md overflow-hidden;
+}

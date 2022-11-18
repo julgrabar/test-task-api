@@ -1,0 +1,15 @@
+.wrapper {
+  @apply bg-white max-w-[515px] mx-auto drop-shadow font-bold text-[20px] leading-6 text-[#70778B] rounded-xl flex justify-center;
+}
+
+.btn {
+  @apply active:outline-none focus:outline-none text-curr-page relative after:absolute after:h-1 after:w-full after:bg-curr-page after:bottom-0 after:left-0;
+}
+
+.prevBtn {
+  @apply py-4 px-6 mr-auto hidden s:block;
+}
+
+.nextBtn {
+  @apply py-4 px-6 ml-auto hidden s:block;
+}

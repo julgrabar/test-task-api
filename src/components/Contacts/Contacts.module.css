@@ -1,0 +1,7 @@
+.contactsWrapper {
+  @apply bg-[#2A3047] rounded-lg overflow-hidden m:shrink-0 max-w-[402px] mx-auto m:mx-0;
+}
+
+.contactsInfo {
+  @apply flex flex-col text-base px-[62px] py-[30px] text-contacts-col;
+}

@@ -1,0 +1,25 @@
+.detailsPageContainer {
+  @apply text-[18px] leading-[24px] text-font-grey l:container l:mx-auto px-[15px] m:px-6 py-6 m:flex m:gap-[30px] m:items-start l:gap-[133px];
+}
+
+.detailsPageContainer header {
+  @apply s:flex s:content-center border-b border-b-main-font/[0.13] mb-6 s:h-11;
+}
+.detailsPageContainer h1 {
+  @apply font-bold text-[28px] leading-6 text-main-font mb-6 m:mb-0;
+}
+.detailsPageContainer h2 {
+  @apply font-bold text-[28px] leading-8 text-main-font border-b border-b-main-font/[0.13]  pb-2 mb-5;
+}
+
+.applyBtn {
+  @apply bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold m:mx-0 mb-[84px]  mt-5 block mx-auto;
+}
+
+.applyBtnHidden {
+  @apply hidden m:block mb-8 bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold;
+}
+
+.backBtn {
+  @apply bg-[#E4E5EA] px-[26px] py-[18px] rounded-lg uppercase text-[#3A4562] text-xs font-semibold mt-24;
+}

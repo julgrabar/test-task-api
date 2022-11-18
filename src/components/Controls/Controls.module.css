@@ -1,0 +1,7 @@
+.controlsWrapper {
+  @apply mb-8 text-base text-font-grey s:ml-auto m:text-[18px];
+}
+
+.btnImg {
+  @apply inline-block mr-3 h-5 w-5;
+}
