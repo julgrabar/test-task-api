@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.94eb6403.css",
+    "main.js": "/static/js/main.92c17951.js",
+    "static/media/proximanova_regular.ttf": "/static/media/proximanova_regular.8181ca4b7c2d1189d78a.ttf",
+    "static/media/proximanova_light.otf": "/static/media/proximanova_light.9d69a5449e101ad71e3d.otf",
+    "static/media/not-find.svg": "/static/media/not-find.068751004a5589c949c482aa8ca6fff9.svg",
+    "static/media/star.svg": "/static/media/star.940f154bce8c4fba195c32ab44b144f2.svg",
+    "index.html": "/index.html",
+    "static/media/arr-next.svg": "/static/media/arr-next.62446877ca918a5c83206d44a3b3c611.svg",
+    "static/media/arr-prev.svg": "/static/media/arr-prev.5968e3c34e0782e8b8dfeed45706f230.svg",
+    "static/media/share.svg": "/static/media/share.14f9ee50b9d134666b10f63dc344ff6b.svg",
+    "static/media/arr-back.svg": "/static/media/arr-back.81b0f26cb6486aa14408fc44c9104536.svg",
+    "static/media/location.svg": "/static/media/location.76bf15991c0760c04d3baed77bfb7a69.svg",
+    "static/media/saved.svg": "/static/media/saved.565dc6815afdcb8c843e4f6762b5bfb9.svg",
+    "static/media/save.svg": "/static/media/save.9d3e2272f7f3becf7329f8ac6703729a.svg",
+    "main.94eb6403.css.map": "/static/css/main.94eb6403.css.map",
+    "main.92c17951.js.map": "/static/js/main.92c17951.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94eb6403.css",
+    "static/js/main.92c17951.js"
+  ]
+}
