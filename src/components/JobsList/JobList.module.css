@@ -19,7 +19,7 @@
 }
 
 .title {
-  @apply text-main-font text-lg leading-6 tracking-[-0.5625px] mb-[7px] inline-block;
+  @apply text-main-font text-lg m:text-xl leading-6 tracking-[-0.5625px] mb-[7px] inline-block;
 }
 
 .rating {

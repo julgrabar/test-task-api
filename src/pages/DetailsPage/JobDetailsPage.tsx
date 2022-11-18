@@ -98,7 +98,7 @@ export const JobDetailsPage = () => {
             className={`${styles.backBtn} mx-auto block`}
             onClick={() => navigate(location.state?.from || "/jobs")}
           >
-            <img src={arrBackImg} alt="" className="inline mr-5" />
+            <img src={arrBackImg} alt="" className="inline mr-5 " />
             Return to job board
           </button>
         </div>

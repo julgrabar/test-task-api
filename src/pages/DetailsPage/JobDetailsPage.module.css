@@ -1,5 +1,5 @@
 .detailsPageContainer {
-  @apply text-[18px] leading-[24px] text-font-grey l:container l:mx-auto px-[15px] m:px-6 py-6 m:flex m:gap-[30px] m:items-start l:gap-[133px];
+  @apply text-[18px] leading-[24px] text-font-grey l:container l:mx-auto px-[15px] m:px-6 py-6 m:pb-[150px] m:flex m:gap-[30px] m:items-start l:gap-[133px];
 }
 
 .detailsPageContainer header {
@@ -13,13 +13,13 @@
 }
 
 .applyBtn {
-  @apply bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold m:mx-0 mb-[84px]  mt-5 block mx-auto;
+  @apply bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold m:mx-0 mb-[84px]  mt-5 block mx-auto hover:scale-105;
 }
 
 .applyBtnHidden {
-  @apply hidden m:block mb-8 bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold;
+  @apply hidden m:block mb-8 bg-[#384564] rounded-lg px-[30px] py-[18px] uppercase text-white text-xs font-bold hover:scale-105;
 }
 
 .backBtn {
-  @apply bg-[#E4E5EA] px-[26px] py-[18px] rounded-lg uppercase text-[#3A4562] text-xs font-semibold mt-24;
+  @apply bg-[#E4E5EA] px-[26px] py-[18px] rounded-lg uppercase text-[#3A4562] text-xs font-semibold mt-24 hover:scale-105;
 }

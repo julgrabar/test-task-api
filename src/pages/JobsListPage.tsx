@@ -16,7 +16,7 @@ export const JobsListPage = () => {
 
   return (
     <div className="bg-[#e6e9f2]">
-      <div className="l:container l:mx-auto p-[9px]">
+      <div className="l:container l:mx-auto p-[9px] pb-6 m:pb-9">
         <JobsList items={data} location={pathname + search} />
         <Pagination page={page} setPage={setPage} totalPages={18} />
       </div>

@@ -10,7 +10,7 @@ export const Controls = () => {
     <div className={styles.controlsWrapper}>
       <button
         type="button"
-        className="mr-9 hover:scale-100"
+        className="mr-9"
         onClick={() => setIsSaved((prev) => !prev)}
       >
         <img
@@ -20,7 +20,7 @@ export const Controls = () => {
         />
         {isSaved ? "Remove from my list" : "Save to my list"}
       </button>
-      <button type="button" className="hover:scale-100">
+      <button type="button">
         <img src={shareImg} className={styles.btnImg} alt="" />
         Share
       </button>

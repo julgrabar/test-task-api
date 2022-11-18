@@ -14,8 +14,8 @@ export const makeDescriptionMarkup = (text: string) =>
             {el
               .split(".")
               .filter((el) => el.trim() !== "")
-              .map((el) => (
-                <li>{el}</li>
+              .map((el, ind) => (
+                <li key={ind}>{el}</li>
               ))}
           </ul>
         );

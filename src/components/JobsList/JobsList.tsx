@@ -10,7 +10,7 @@ interface IProps {
 
 export const JobsList: FC<IProps> = ({ items, location }) => {
   return (
-    <ul className="mb-6 s:mb-12">
+    <ul className="mb-6 m:mb-12">
       {items.map((job) => (
         <li key={job.id} className={styles.jobItem}>
           <JobItem job={job} location={location} />

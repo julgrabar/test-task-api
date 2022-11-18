@@ -60,8 +60,8 @@ const Rating: FC<{ value: number }> = ({ value }) => {
   const arr = new Array(value).fill("star");
   return (
     <div className={styles.rating}>
-      {arr.map(() => (
-        <img src={star} alt="star" />
+      {arr.map((_, ind) => (
+        <img src={star} alt="star" key={ind} />
       ))}
     </div>
   );
