@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/test-task/static/css/main.5b1351f4.css",
-    "main.js": "/test-task/static/js/main.ac6333b5.js",
-    "static/media/proximanova_regular.ttf": "/test-task/static/media/proximanova_regular.8181ca4b7c2d1189d78a.ttf",
-    "static/media/loader.gif": "/test-task/static/media/loader.90672f1deffccbcdf4f1.gif",
-    "static/media/proximanova_light.otf": "/test-task/static/media/proximanova_light.9d69a5449e101ad71e3d.otf",
-    "static/media/not-find.svg": "/test-task/static/media/not-find.068751004a5589c949c482aa8ca6fff9.svg",
-    "index.html": "/test-task/index.html",
-    "static/media/star.svg": "/test-task/static/media/star.940f154bce8c4fba195c32ab44b144f2.svg",
-    "static/media/arr-next.svg": "/test-task/static/media/arr-next.62446877ca918a5c83206d44a3b3c611.svg",
-    "static/media/arr-prev.svg": "/test-task/static/media/arr-prev.5968e3c34e0782e8b8dfeed45706f230.svg",
-    "static/media/share.svg": "/test-task/static/media/share.14f9ee50b9d134666b10f63dc344ff6b.svg",
-    "static/media/arr-back.svg": "/test-task/static/media/arr-back.81b0f26cb6486aa14408fc44c9104536.svg",
-    "static/media/location.svg": "/test-task/static/media/location.76bf15991c0760c04d3baed77bfb7a69.svg",
-    "static/media/saved.svg": "/test-task/static/media/saved.565dc6815afdcb8c843e4f6762b5bfb9.svg",
-    "static/media/save.svg": "/test-task/static/media/save.9d3e2272f7f3becf7329f8ac6703729a.svg",
-    "main.5b1351f4.css.map": "/test-task/static/css/main.5b1351f4.css.map",
-    "main.ac6333b5.js.map": "/test-task/static/js/main.ac6333b5.js.map"
+    "main.css": "/test-task-api/static/css/main.88648f71.css",
+    "main.js": "/test-task-api/static/js/main.859d5ac8.js",
+    "static/media/proximanova_regular.ttf": "/test-task-api/static/media/proximanova_regular.8181ca4b7c2d1189d78a.ttf",
+    "static/media/loader.gif": "/test-task-api/static/media/loader.90672f1deffccbcdf4f1.gif",
+    "static/media/proximanova_light.otf": "/test-task-api/static/media/proximanova_light.9d69a5449e101ad71e3d.otf",
+    "static/media/not-find.svg": "/test-task-api/static/media/not-find.068751004a5589c949c482aa8ca6fff9.svg",
+    "index.html": "/test-task-api/index.html",
+    "static/media/star.svg": "/test-task-api/static/media/star.940f154bce8c4fba195c32ab44b144f2.svg",
+    "static/media/arr-next.svg": "/test-task-api/static/media/arr-next.62446877ca918a5c83206d44a3b3c611.svg",
+    "static/media/arr-prev.svg": "/test-task-api/static/media/arr-prev.5968e3c34e0782e8b8dfeed45706f230.svg",
+    "static/media/share.svg": "/test-task-api/static/media/share.14f9ee50b9d134666b10f63dc344ff6b.svg",
+    "static/media/arr-back.svg": "/test-task-api/static/media/arr-back.81b0f26cb6486aa14408fc44c9104536.svg",
+    "static/media/location.svg": "/test-task-api/static/media/location.76bf15991c0760c04d3baed77bfb7a69.svg",
+    "static/media/saved.svg": "/test-task-api/static/media/saved.565dc6815afdcb8c843e4f6762b5bfb9.svg",
+    "static/media/save.svg": "/test-task-api/static/media/save.9d3e2272f7f3becf7329f8ac6703729a.svg",
+    "main.88648f71.css.map": "/test-task-api/static/css/main.88648f71.css.map",
+    "main.859d5ac8.js.map": "/test-task-api/static/js/main.859d5ac8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b1351f4.css",
-    "static/js/main.ac6333b5.js"
+    "static/css/main.88648f71.css",
+    "static/js/main.859d5ac8.js"
   ]
 }
