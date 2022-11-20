@@ -4,7 +4,7 @@ import { IVacancy } from "types/types";
 import styles from "./JobHeadSection.module.css";
 
 export const JobHeadSection: FC<{ job: IVacancy }> = ({
-  job: { title, createdAt, salary },
+  job: { title, created_at: createdAt, salary },
 }) => {
   return (
     <div className={styles.wrapper}>

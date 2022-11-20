@@ -3,5 +3,5 @@
 }
 
 .addInfoItem {
-  @apply p-4 min-w-[120px] rounded-lg border font-bold mr-2 last:mr-0 text-[16px] leading-4 text-center;
+  @apply p-4 min-w-[120px] rounded-lg border font-bold mr-2 last:mr-0 text-[16px] leading-4 text-center mb-2;
 }

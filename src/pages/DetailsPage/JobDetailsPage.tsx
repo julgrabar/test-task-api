@@ -8,27 +8,49 @@ import { makeDescriptionMarkup } from "helpers/makeDescriptionMarkup";
 import { JobHeadSection } from "../../components/JobHeadSection/JobHeadSection";
 import { Controls } from "../../components/Controls/Controls";
 import styles from "./JobDetailsPage.module.css";
-import { data } from "data";
 import notFindImg from "images/not-find.svg";
 import arrBackImg from "images/arr-back.svg";
+import { statusList, useFetch } from "hooks/fetchingHook";
+import { fetchJob } from "services/api-service";
+import { IVacancy } from "types/types";
+import loadingImg from "images/loader.gif";
 
 export const JobDetailsPage = () => {
   const screenWidth = useScreenWidth();
   const { jobId } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const job = data.find((el) => el.id === jobId) || null;
+
+  const {
+    data: job,
+    setIsRefetch,
+    status,
+  } = useFetch<IVacancy, number>(fetchJob, Number(jobId));
 
   return (
     <div className={styles.detailsPageContainer}>
-      {job && (
+      {status === statusList.SUCCESS && job && (
         <>
           <div>
             <header>
               <h1>Job details</h1>
-              {screenWidth > 480 && <Controls />}
+              {screenWidth > 480 && (
+                <Controls
+                  isSaved={job.is_in_favorites}
+                  refetch={setIsRefetch}
+                  id={job.id}
+                  favId={job.favorites_id}
+                />
+              )}
             </header>
-            {screenWidth <= 480 && <Controls />}
+            {screenWidth <= 480 && (
+              <Controls
+                isSaved={job.is_in_favorites}
+                refetch={setIsRefetch}
+                id={job.id}
+                favId={job.favorites_id}
+              />
+            )}
 
             <button type="button" className={styles.applyBtnHidden}>
               Apply now
@@ -85,14 +107,25 @@ export const JobDetailsPage = () => {
           <Contacts job={job} />
         </>
       )}
-      {!job && (
+
+      {status === statusList.LOADING && (
+        <img
+          src={loadingImg}
+          alt="Loading"
+          className="block mx-auto h-[50px] w-[50px]"
+        />
+      )}
+
+      {status === statusList.ERR && (
         <div className="w-full">
           <img
             src={notFindImg}
             alt=""
             className="w-full max-w-[600px] mx-auto "
           />
-          <p className="text-center">Ooops.. This vacancy doesn't exist.</p>
+          <p className="text-center">
+            Something went wrong. Try to Reloag the page.
+          </p>
           <button
             type="button"
             className={`${styles.backBtn} mx-auto block`}

@@ -26,7 +26,7 @@ export const Contacts: FC<{ job: IVacancy }> = ({
         center={[location.lat, location.long]}
         zoom={13}
         scrollWheelZoom={false}
-        className="h-[218px] l:w-[402px]"
+        className="h-[218px] w-full"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -1,16 +1,27 @@
 export interface IVacancy {
   address: string;
-  benefits: string[];
-  createdAt: string;
+  avatar: string;
+  benefits: IAdditional[];
+  created_at: string;
   description: string;
   email: string;
-  employment_type: string[];
-  id: string;
-  location: { lat: number; long: number };
-  name: string;
+  employment_type: IAdditional[];
+  id: number;
+  location: { id: number; lat: number; long: number };
+  company_name: string;
+  department_name: string;
   phone: string;
   pictures: string[];
   salary: string;
   title: string;
-  updatedAt?: string;
+  updated_at?: string;
+  is_in_favorites: boolean;
+  rating: number;
+  name: string;
+  favorites_id: number;
+}
+
+export interface IAdditional {
+  id: number;
+  name: string;
 }

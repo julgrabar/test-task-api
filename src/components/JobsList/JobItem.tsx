@@ -7,15 +7,39 @@ import savedImg from "images/saved.svg";
 import { FC, useState } from "react";
 import star from "images/star.svg";
 import styles from "./JobList.module.css";
+import { saveVacancy, unsaveVacancy } from "services/api-service";
+import loadingImg from "images/loader.gif";
 
 interface IProps {
   job: IVacancy;
   location: string;
+  refetch: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const JobItem: FC<IProps> = ({ job, location }) => {
-  const { pictures, title, name, address, createdAt, id } = job;
-  const [isSaved, setIsSaved] = useState(false);
+export const JobItem: FC<IProps> = ({ job, location, refetch }) => {
+  const [isSavingLoad, setIsSavingLoad] = useState(false);
+  const {
+    title,
+    name,
+    address,
+    created_at: createdAt,
+    id,
+    avatar,
+    is_in_favorites: isSaved,
+    favorites_id: favId,
+  } = job;
+
+  const handleSaveBtn = async () => {
+    try {
+      setIsSavingLoad(true);
+      isSaved ? await unsaveVacancy(favId) : await saveVacancy(id);
+      refetch(true);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsSavingLoad(false);
+    }
+  };
 
   return (
     <>
@@ -23,20 +47,21 @@ export const JobItem: FC<IProps> = ({ job, location }) => {
         <button
           type="button"
           className="hidden m:block hover:scale-110"
-          onClick={() => setIsSaved((prev) => !prev)}
+          onClick={() => handleSaveBtn()}
+          disabled={isSavingLoad}
         >
           <img
             width="16"
             height="20"
-            src={isSaved ? savedImg : saveImg}
+            src={isSavingLoad ? loadingImg : isSaved ? savedImg : saveImg}
             alt="save"
           />
         </button>
-        <Rating value={5} />
+        <Rating value={job.rating} />
         <span className={styles.publicationDate}>{formatDate(createdAt)}</span>
       </div>
       <div className="flex mr-8">
-        <img alt="company" src={pictures[0]} className={styles.avatar} />
+        <img alt="company" src={avatar} className={styles.avatar} />
         <div className={styles.jobInfo}>
           <Link
             to={`/jobs/${id}`}

@@ -3,18 +3,41 @@ import savedImg from "images/saved.svg";
 import shareImg from "images/share.svg";
 import { useState } from "react";
 import styles from "./Controls.module.css";
+import { FC } from "react";
+import { saveVacancy, unsaveVacancy } from "services/api-service";
+import loadingImg from "images/loader.gif";
 
-export const Controls = () => {
-  const [isSaved, setIsSaved] = useState(false);
+interface IProps {
+  refetch: React.Dispatch<React.SetStateAction<boolean>>;
+  id: number;
+  favId: number;
+  isSaved: boolean;
+}
+
+export const Controls: FC<IProps> = ({ isSaved, refetch, id, favId }) => {
+  const [isSavingLoad, setIsSavingLoad] = useState(false);
+
+  const handleSaveBtn = async () => {
+    try {
+      setIsSavingLoad(true);
+      isSaved ? await unsaveVacancy(favId) : await saveVacancy(id);
+      refetch(true);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsSavingLoad(false);
+    }
+  };
   return (
     <div className={styles.controlsWrapper}>
       <button
         type="button"
         className="mr-9"
-        onClick={() => setIsSaved((prev) => !prev)}
+        onClick={() => handleSaveBtn()}
+        disabled={isSavingLoad}
       >
         <img
-          src={isSaved ? savedImg : saveImg}
+          src={isSavingLoad ? loadingImg : isSaved ? savedImg : saveImg}
           className={styles.btnImg}
           alt=""
         />

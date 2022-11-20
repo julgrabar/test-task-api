@@ -1,9 +1,10 @@
 import { FC } from "react";
+import { IAdditional } from "types/types";
 import styles from "./AddInfoList.module.css";
 
 interface IProps {
   title: string;
-  items: string[];
+  items: IAdditional[];
   styles: {
     fontColor: string;
     borderColor: string;
@@ -26,7 +27,7 @@ export const AddInfoList: FC<IProps> = ({
             key={ind}
             className={`${styles.addInfoItem} ${borderColor} ${bgColor} ${fontColor}`}
           >
-            {item}
+            {item.name}
           </li>
         ))}
       </ul>
