@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <BrowserRouter basename="/test-task/">
+  <BrowserRouter basename="/test-task-api/">
     <React.StrictMode>
       <App />
     </React.StrictMode>
